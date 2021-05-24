@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/highscoresLinearLayout"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/BaseLinearLayout"
+    tools:context=".HighscoresActivity">
+
+    <TextView
+        style="@style/Title"
+        android:id="@+id/titleTextView"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/highscore_share_tip"/>
+
+    <ListView
+        android:id="@+id/highscoresHolderListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="25dp">
+
+    </ListView>
+
+    <Button
+        style="@style/MenuButton"
+        android:text="@string/button_home"
+        android:onClick="homeButtonClicked"
+        tools:ignore="OnClick" />
+
+</LinearLayout>

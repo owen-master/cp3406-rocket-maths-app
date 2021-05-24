@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:id="@+id/playersLinearLayout"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/BaseLinearLayout"
+    tools:context=".PlayersActivity">
+
+    <TextView
+        style="@style/Title"
+        android:id="@+id/titleTextView"
+        android:text="@string/title_who_are_you"/>
+
+    <LinearLayout
+        android:id="@+id/playersHolderLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+
+    <Button
+        style="@style/MenuButton"
+        android:id="@+id/newPlayerButton"
+        android:onClick="newPlayerButtonClicked"
+        android:text="@string/button_new_player"/>
+
+    <Button
+        style="@style/MenuButton"
+        android:text="@string/button_home"
+        android:onClick="homeButtonClicked"
+        tools:ignore="OnClick" />
+
+</LinearLayout>

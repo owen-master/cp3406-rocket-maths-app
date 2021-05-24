@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/BaseLinearLayout"
+    tools:context=".SettingsActivity">
+
+    <TextView
+        style="@style/Title"
+        android:id="@+id/titleTextView"
+        android:text="@string/title_settings"/>
+
+    <Button
+        style="@style/MenuButton"
+        android:id="@+id/gameDifficultyButton"
+        android:onClick="gameDifficultyButtonClicked"/>
+
+    <Button
+        style="@style/MenuButton"
+        android:id="@+id/soundButton"
+        android:onClick="musicButtonClicked"/>
+
+    <Button
+        style="@style/MenuButton"
+        android:id="@+id/clearResultsButton"
+        android:onClick="clearResultsButtonClicked"
+        android:text="@string/button_clear_results"/>
+
+    <Button
+        style="@style/MenuButton"
+        android:id="@+id/clearPlayersButton"
+        android:onClick="clearPlayersButtonClicked"
+        android:text="@string/button_clear_players"/>
+
+    <Button
+        style="@style/MenuButton"
+        android:text="@string/button_home"
+        android:onClick="homeButtonClicked"
+        tools:ignore="OnClick" />
+
+</LinearLayout>

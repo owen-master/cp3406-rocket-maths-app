@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/BaseLinearLayout"
+    tools:context=".LandingActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/planet_2"
+        android:rotation="90"
+        android:contentDescription="@string/description_landing_image" />
+
+    <TextView
+        style="@style/Title"
+        android:id="@+id/titleTextView"
+        android:text="@string/title_game"
+        android:layout_marginBottom="50dp"/>
+
+    <Button
+        style="@style/MenuButton"
+        android:id="@+id/newGameButton"
+        android:text="@string/button_new_game"
+        android:onClick="newGameButtonClicked"/>
+
+    <Button
+        style="@style/MenuButton"
+        android:id="@+id/highscoresButton"
+        android:layout_marginTop="5dp"
+        android:text="@string/button_highscores"
+
+        android:onClick="highscoresButtonClicked"/>
+
+    <Button
+        style="@style/MenuButton"
+        android:id="@+id/tutorialButton"
+        android:layout_marginTop="5dp"
+        android:text="@string/button_how_to_play"
+
+        android:onClick="tutorialButtonClicked"/>
+
+    <Button
+        style="@style/MenuButton"
+        android:id="@+id/settingsButton"
+        android:layout_marginTop="5dp"
+        android:text="@string/button_settings"
+        android:onClick="settingsButtonClicked" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:text="@string/title_year" />
+
+</LinearLayout>
